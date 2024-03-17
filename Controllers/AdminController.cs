@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
 using Store.Infrastructure;
 using Store.Models;
 using System.Threading.Tasks;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Store.Controllers
@@ -11,39 +9,30 @@ namespace Store.Controllers
     [Authorize(Roles = "Administrators")]
     public class AdminController : Controller
     {
+
+        private void AddErrorsFromResult(IdentityResult result)
+        {
+            foreach (string error in result.Errors)
+            {
+                ModelState.AddModelError("", error);
+            }
+        }
+
+        private readonly AppUserManager _userManager;
+
+        public AdminController(AppUserManager userManager)
+        {
+            _userManager = userManager;
+        }
+
         public ActionResult Index()
         {
-            return View(UserManager.Users);
-        }
-
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public async Task<ActionResult> Create(CreateModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                AppUser user = new AppUser { UserName = model.Name, Email = model.Email };
-                IdentityResult result = await UserManager.CreateAsync(user, model.Password);
-
-                if (result.Succeeded)
-                {
-                    return RedirectToAction("Index");
-                }
-                else
-                {
-                    AddErrorsFromResult(result);
-                }
-            }
-            return View(model);
+            return View(_userManager.Users);
         }
 
         public async Task<ActionResult> Edit(string id)
         {
-            AppUser user = await UserManager.FindByIdAsync(id);
+            AppUser user = await _userManager.FindByIdAsync(id);
             if (user != null)
             {
                 return View(user);
@@ -57,12 +46,11 @@ namespace Store.Controllers
         [HttpPost]
         public async Task<ActionResult> Edit(string id, string email, string password)
         {
-            AppUser user = await UserManager.FindByIdAsync(id);
+            AppUser user = await _userManager.FindByIdAsync(id);
             if (user != null)
             {
                 user.Email = email;
-                IdentityResult validEmail
-                    = await UserManager.UserValidator.ValidateAsync(user);
+                IdentityResult validEmail = await _userManager.UserValidator.ValidateAsync(user);
 
                 if (!validEmail.Succeeded)
                 {
@@ -72,12 +60,11 @@ namespace Store.Controllers
                 IdentityResult validPass = null;
                 if (password != string.Empty)
                 {
-                    validPass = await UserManager.PasswordValidator.ValidateAsync(password);
+                    validPass = await _userManager.PasswordValidator.ValidateAsync(password);
 
                     if (validPass.Succeeded)
                     {
-                        user.PasswordHash =
-                            UserManager.PasswordHasher.HashPassword(password);
+                        user.PasswordHash = _userManager.PasswordHasher.HashPassword(password);
                     }
                     else
                     {
@@ -88,7 +75,7 @@ namespace Store.Controllers
                 if ((validEmail.Succeeded && validPass == null) ||
                         (validEmail.Succeeded && password != string.Empty && validPass.Succeeded))
                 {
-                    IdentityResult result = await UserManager.UpdateAsync(user);
+                    IdentityResult result = await _userManager.UpdateAsync(user);
                     if (result.Succeeded)
                     {
                         return RedirectToAction("Index");
@@ -109,11 +96,11 @@ namespace Store.Controllers
         [HttpPost]
         public async Task<ActionResult> Delete(string id)
         {
-            AppUser user = await UserManager.FindByIdAsync(id);
+            AppUser user = await _userManager.FindByIdAsync(id);
 
             if (user != null)
             {
-                IdentityResult result = await UserManager.DeleteAsync(user);
+                IdentityResult result = await _userManager.DeleteAsync(user);
                 if (result.Succeeded)
                 {
                     return RedirectToAction("Index");
@@ -126,24 +113,6 @@ namespace Store.Controllers
             else
             {
                 return View("Error", new string[] { "Пользователь не найден" });
-            }
-        }
-
-
-
-        private void AddErrorsFromResult(IdentityResult result)
-        {
-            foreach (string error in result.Errors)
-            {
-                ModelState.AddModelError("", error);
-            }
-        }
-
-        private AppUserManager UserManager
-        {
-            get
-            {
-                return HttpContext.GetOwinContext().GetUserManager<AppUserManager>();
             }
         }
     }

@@ -1,7 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNet.Identity
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - интернет магазин</title>
@@ -21,10 +22,26 @@
                     <li>@Html.ActionLink("Главная страница", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Информация", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Контакты", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    @if (Request.IsAuthenticated && User.IsInRole("Administrators"))
+                    {
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="nav-link dropbtn">Панель администратора</a>
+                            <div class="dropdown-content">
+                                @Html.ActionLink("Пользователи", "Index", "Admin")
+                                @Html.ActionLink("Роли", "Index", "RoleAdmin")
+                            </div>
+                        </li>
+                    }
                 </ul>
-                <ul class="navbar-nav navbar-right">
-                    <li>@Html.ActionLink("Выйти", "Logout", "Account", new { area = "" }, new { @class = "nav-link" })</li>
-                </ul>
+                @if (Request.IsAuthenticated)
+                {
+                    <ul class="navbar-nav navbar-right">
+                        <li>
+                            @Html.ActionLink("Здравствуйте " + User.Identity.GetUserName() + "!", "Index", "Home", routeValues: null, htmlAttributes: new { title = "Manage", @class = "nav-link" })
+                        </li>
+                        <li>@Html.ActionLink("Выйти", "Logout", "Account", new { area = "" }, new { @class = "nav-link" })</li>
+                    </ul>
+                }
             </div>
         </div>
     </nav>
@@ -37,8 +54,6 @@
             <small>&copy; @DateTime.Now.Year - Интернет магазин. Все права защищены</small>
         </div>
     </footer>
-
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

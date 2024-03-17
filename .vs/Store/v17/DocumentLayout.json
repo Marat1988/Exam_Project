@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|c:\\users\\hp\\documents\\github\\exam_project\\infrastructure\\custompasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:infrastructure\\custompasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomPasswordValidator.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Infrastructure\\CustomPasswordValidator.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\CustomPasswordValidator.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Infrastructure\\CustomPasswordValidator.cs",
+              "RelativeToolTip": "Infrastructure\\CustomPasswordValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T11:29:05.844Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

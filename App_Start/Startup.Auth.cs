@@ -3,10 +3,8 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin;
 using Owin;
 using Store.Infrastructure;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Store.Models;
 
 namespace Store
 {
@@ -22,6 +20,7 @@ namespace Store
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
                 LoginPath = new PathString("/Account/Login"),
             });
+
 
             app.CreatePerOwinContext<AppRoleManager>(AppRoleManager.Create);
         }

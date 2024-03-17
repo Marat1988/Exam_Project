@@ -1,11 +1,9 @@
-﻿using Microsoft.AspNet.Identity.Owin;
-using Microsoft.AspNet.Identity;
+﻿using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 using Store.Infrastructure;
 using Store.Models;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Store.Controllers
@@ -13,24 +11,31 @@ namespace Store.Controllers
     [Authorize]
     public class AccountController : Controller
     {
+        private readonly IAuthenticationManager _authManager;
+        private readonly AppUserManager _userManager;
+
+        public AccountController(IAuthenticationManager authManager, AppUserManager userManager)
+        {
+            _authManager = authManager;
+            _userManager = userManager;
+        }
+
         [AllowAnonymous]
-        public ActionResult Login(string returnUrl)
+        public ActionResult Login()
         {
             if (HttpContext.User.Identity.IsAuthenticated)
             {
                 return View("Error", new string[] { "В доступе отказано" });
             }
-
-            ViewBag.returnUrl = returnUrl;
             return View();
         }
 
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Login(LoginViewModel details, string returnUrl)
+        public async Task<ActionResult> Login(LoginViewModel details)
         {
-            AppUser user = await UserManager.FindAsync(details.Name, details.Password);
+            AppUser user = await _userManager.FindAsync(details.Name, details.Password);
 
             if (user == null)
             {
@@ -38,40 +43,24 @@ namespace Store.Controllers
             }
             else
             {
-                ClaimsIdentity ident = await UserManager.CreateIdentityAsync(user, DefaultAuthenticationTypes.ApplicationCookie);
+                ClaimsIdentity ident = await _userManager.CreateIdentityAsync(user, DefaultAuthenticationTypes.ApplicationCookie);
 
-                AuthManager.SignOut();
-                AuthManager.SignIn(new AuthenticationProperties
+                _authManager.SignOut();
+                _authManager.SignIn(new AuthenticationProperties
                 {
                     IsPersistent = false
                 }, ident);
-                return Redirect(returnUrl);
+                return RedirectToAction("Index", "Home");
             }
 
             return View(details);
         }
 
-        private IAuthenticationManager AuthManager
-        {
-            get
-            {
-                return HttpContext.GetOwinContext().Authentication;
-            }
-        }
-
-        private AppUserManager UserManager
-        {
-            get
-            {
-                return HttpContext.GetOwinContext().GetUserManager<AppUserManager>();
-            }
-        }
-
         [Authorize]
         public ActionResult Logout()
         {
-            AuthManager.SignOut();
-            return RedirectToAction("Index", "Home");
+            _authManager.SignOut();
+            return RedirectToAction("Login", "Account");
         }
     }
 }
