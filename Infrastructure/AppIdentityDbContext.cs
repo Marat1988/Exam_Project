@@ -2,6 +2,7 @@
 using Microsoft.AspNet.Identity.EntityFramework;
 using Store.Models;
 using System.Data.Entity;
+using System.Threading.Tasks;
 
 namespace Store.Infrastructure
 {
@@ -18,6 +19,13 @@ namespace Store.Infrastructure
         {
             return new AppIdentityDbContext();
         }
+
+        public override Task<int> SaveChangesAsync()
+        {
+            return base.SaveChangesAsync();
+        }
+
+        public DbSet<Product> Products { get; set; }
     }
 
     public class IdentityDbInit : DropCreateDatabaseIfModelChanges<AppIdentityDbContext>

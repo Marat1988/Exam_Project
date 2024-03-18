@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|c:\\users\\hp\\documents\\github\\exam_project\\infrastructure\\custompasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:infrastructure\\custompasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|c:\\users\\hp\\documents\\github\\exam_project\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|c:\\users\\hp\\documents\\github\\exam_project\\infrastructure\\appidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:infrastructure\\appidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CustomPasswordValidator.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Infrastructure\\CustomPasswordValidator.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\CustomPasswordValidator.cs",
-              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Infrastructure\\CustomPasswordValidator.cs",
-              "RelativeToolTip": "Infrastructure\\CustomPasswordValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAMAAAA",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-17T11:29:05.844Z",
+              "WhenOpened": "2024-03-18T00:13:09.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppIdentityDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Infrastructure\\AppIdentityDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\AppIdentityDbContext.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Infrastructure\\AppIdentityDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\AppIdentityDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T00:13:02.357Z",
               "EditorCaption": ""
             }
           ]

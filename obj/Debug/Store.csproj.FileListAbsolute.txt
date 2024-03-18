@@ -215,3 +215,6 @@ C:\Users\HP\Documents\GitHub\Exam_Project\obj\Debug\Store.pdb
 C:\Users\HP\Documents\GitHub\Exam_Project\bin\ru\Microsoft.AspNet.Identity.Core.resources.dll
 C:\Users\HP\Documents\GitHub\Exam_Project\bin\ru\Microsoft.AspNet.Identity.EntityFramework.resources.dll
 C:\Users\HP\Documents\GitHub\Exam_Project\bin\ru\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\HP\Documents\GitHub\Exam_Project\obj\Debug\Store.Migrations.InitialCreate.resources
+C:\Users\HP\Documents\GitHub\Exam_Project\obj\Debug\Store.csproj.GenerateResource.cache
+C:\Users\HP\Documents\GitHub\Exam_Project\obj\Debug\Store.Migrations.CreateTableProduct.resources

@@ -43,14 +43,20 @@ namespace Store.Controllers
             }
             else
             {
-                ClaimsIdentity ident = await _userManager.CreateIdentityAsync(user, DefaultAuthenticationTypes.ApplicationCookie);
-
-                _authManager.SignOut();
-                _authManager.SignIn(new AuthenticationProperties
+                if (user.LockoutEnabled)
                 {
-                    IsPersistent = false
-                }, ident);
-                return RedirectToAction("Index", "Home");
+                    ModelState.AddModelError("", "Вы заблокированы!");
+                }
+                else
+                {
+                    ClaimsIdentity ident = await _userManager.CreateIdentityAsync(user, DefaultAuthenticationTypes.ApplicationCookie);
+                    _authManager.SignOut();
+                    _authManager.SignIn(new AuthenticationProperties
+                    {
+                        IsPersistent = false
+                    }, ident);
+                    return RedirectToAction("Index", "Home");
+                }
             }
 
             return View(details);

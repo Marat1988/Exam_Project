@@ -2,6 +2,7 @@
 using Store.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
@@ -9,6 +10,7 @@ namespace Store.Infrastructure
 {
     public class CustomUserValidator : IIdentityValidator<AppUser>
     {
+
         public async Task<IdentityResult> ValidateAsync(AppUser item)
         {
             List<string> errors = new List<string>();
@@ -22,7 +24,7 @@ namespace Store.Infrastructure
                 errors.Add("В имени разрешается указывать буквы английского или русского языков, и цифры");
 
             if (errors.Count > 0)
-                return IdentityResult.Failed(errors.ToArray());
+                return  IdentityResult.Failed(errors.ToArray());
 
             return  IdentityResult.Success;
         }

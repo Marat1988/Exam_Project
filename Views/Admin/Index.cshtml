@@ -14,6 +14,7 @@
             <th>Id</th>
             <th>Имя</th>
             <th>Email</th>
+            <th>Заблокирован</th>
             <th></th>
         </tr>
         @if (Model.Count() == 0)
@@ -30,6 +31,7 @@
                     <td>@user.Id</td>
                     <td>@user.UserName</td>
                     <td>@user.Email</td>
+                    <td>@Html.CheckBox("User", @user.LockoutEnabled, new { data_userId = user.Id, onchange = "LockoutEnabled(this)" })</td>
                     <td>
                         @using (Html.BeginForm("Delete", "Admin", new { id = user.Id }))
                         {
@@ -43,3 +45,23 @@
         }
     </table>
 </div>
+
+
+
+<script>
+
+    function LockoutEnabled(e) {
+        console.log($(e).data);
+        $.ajax({
+            url: "@Url.Action("LockoutEnabled", "AdminApi")",
+            data: {
+                UserId: $(e).data('userid'),
+                LockoutEnabled: e.checked
+            },
+            method: "POST",
+            success: function (data) {
+                alert('Готово');
+            }
+        });
+    }
+</script>

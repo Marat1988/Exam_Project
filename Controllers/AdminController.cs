@@ -93,6 +93,7 @@ namespace Store.Controllers
             return View(user);
         }
 
+
         [HttpPost]
         public async Task<ActionResult> Delete(string id)
         {

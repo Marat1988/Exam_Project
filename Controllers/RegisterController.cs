@@ -2,6 +2,7 @@
 using Microsoft.Owin.Security;
 using Store.Infrastructure;
 using Store.Models;
+using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web.Mvc;
@@ -42,24 +43,31 @@ namespace Store.Controllers
         {
             if (ModelState.IsValid)
             {
-                AppUser user = new AppUser { UserName = model.Name, Email = model.Email };
-                IdentityResult result = await _userManager.CreateAsync(user, model.Password);
-
-                if (result.Succeeded)
+                try
                 {
-                    await _userManager.AddToRoleAsync(user.Id, "Users");
-                    ClaimsIdentity ident = await _userManager.CreateIdentityAsync(user, DefaultAuthenticationTypes.ApplicationCookie);
+                    AppUser user = new AppUser { UserName = model.Name, Email = model.Email };
+                    IdentityResult result = await _userManager.CreateAsync(user, model.Password);
 
-                    _authManager.SignOut();
-                    _authManager.SignIn(new AuthenticationProperties
+                    if (result.Succeeded)
                     {
-                        IsPersistent = false
-                    }, ident);
-                    return RedirectToAction("Index", "Home");
+                        await _userManager.AddToRoleAsync(user.Id, "Users");
+                        ClaimsIdentity ident = await _userManager.CreateIdentityAsync(user, DefaultAuthenticationTypes.ApplicationCookie);
+
+                        _authManager.SignOut();
+                        _authManager.SignIn(new AuthenticationProperties
+                        {
+                            IsPersistent = false
+                        }, ident);
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        AddErrorsFromResult(result);
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    AddErrorsFromResult(result);
+                    ModelState.AddModelError("", ex.Message);
                 }
             }
             return View(model);
