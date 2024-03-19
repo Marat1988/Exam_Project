@@ -199,10 +199,39 @@
     <Compile Include="Migrations\202403180003184_CreateTableProduct.Designer.cs">
       <DependentUpon>202403180003184_CreateTableProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202403182003069_CreateTableGroups.cs" />
+    <Compile Include="Migrations\202403182003069_CreateTableGroups.Designer.cs">
+      <DependentUpon>202403182003069_CreateTableGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403182034280_CreateTableSupplier.cs" />
+    <Compile Include="Migrations\202403182034280_CreateTableSupplier.Designer.cs">
+      <DependentUpon>202403182034280_CreateTableSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403182228147_CreateTableOrder.cs" />
+    <Compile Include="Migrations\202403182228147_CreateTableOrder.Designer.cs">
+      <DependentUpon>202403182228147_CreateTableOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403182326098_CreateTableLineOrder.cs" />
+    <Compile Include="Migrations\202403182326098_CreateTableLineOrder.Designer.cs">
+      <DependentUpon>202403182326098_CreateTableLineOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403182345551_InsertFieldInTableLineOrder.cs" />
+    <Compile Include="Migrations\202403182345551_InsertFieldInTableLineOrder.Designer.cs">
+      <DependentUpon>202403182345551_InsertFieldInTableLineOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403182358250_CreateTableRecycler.cs" />
+    <Compile Include="Migrations\202403182358250_CreateTableRecycler.Designer.cs">
+      <DependentUpon>202403182358250_CreateTableRecycler.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppRole.cs" />
     <Compile Include="Models\AppUser.cs" />
+    <Compile Include="Models\Group.cs" />
+    <Compile Include="Models\LineOrder.cs" />
+    <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Recycler.cs" />
+    <Compile Include="Models\Supplier.cs" />
     <Compile Include="ViewModel\UserViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -305,6 +334,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202403180003184_CreateTableProduct.resx">
       <DependentUpon>202403180003184_CreateTableProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403182003069_CreateTableGroups.resx">
+      <DependentUpon>202403182003069_CreateTableGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403182034280_CreateTableSupplier.resx">
+      <DependentUpon>202403182034280_CreateTableSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403182228147_CreateTableOrder.resx">
+      <DependentUpon>202403182228147_CreateTableOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403182326098_CreateTableLineOrder.resx">
+      <DependentUpon>202403182326098_CreateTableLineOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403182345551_InsertFieldInTableLineOrder.resx">
+      <DependentUpon>202403182345551_InsertFieldInTableLineOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403182358250_CreateTableRecycler.resx">
+      <DependentUpon>202403182358250_CreateTableRecycler.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

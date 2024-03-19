@@ -26,6 +26,11 @@ namespace Store.Infrastructure
         }
 
         public DbSet<Product> Products { get; set; }
+        public DbSet<Group> Groups { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<LineOrder> LineOrders { get; set; }
+        public DbSet<Recycler> Recyclers { get; set; }
     }
 
     public class IdentityDbInit : DropCreateDatabaseIfModelChanges<AppIdentityDbContext>

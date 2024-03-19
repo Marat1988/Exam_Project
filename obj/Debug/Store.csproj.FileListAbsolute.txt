@@ -218,3 +218,9 @@ C:\Users\HP\Documents\GitHub\Exam_Project\bin\ru\Microsoft.AspNet.Identity.Owin.
 C:\Users\HP\Documents\GitHub\Exam_Project\obj\Debug\Store.Migrations.InitialCreate.resources
 C:\Users\HP\Documents\GitHub\Exam_Project\obj\Debug\Store.csproj.GenerateResource.cache
 C:\Users\HP\Documents\GitHub\Exam_Project\obj\Debug\Store.Migrations.CreateTableProduct.resources
+C:\Users\HP\Documents\GitHub\Exam_Project\obj\Debug\Store.Migrations.CreateTableGroups.resources
+C:\Users\HP\Documents\GitHub\Exam_Project\obj\Debug\Store.Migrations.CreateTableSupplier.resources
+C:\Users\HP\Documents\GitHub\Exam_Project\obj\Debug\Store.Migrations.CreateTableOrder.resources
+C:\Users\HP\Documents\GitHub\Exam_Project\obj\Debug\Store.Migrations.CreateTableLineOrder.resources
+C:\Users\HP\Documents\GitHub\Exam_Project\obj\Debug\Store.Migrations.InsertFieldInTableLineOrder.resources
+C:\Users\HP\Documents\GitHub\Exam_Project\obj\Debug\Store.Migrations.CreateTableRecycler.resources
