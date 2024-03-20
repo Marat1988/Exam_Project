@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|c:\\users\\hp\\documents\\github\\exam_project\\models\\lineorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:models\\lineorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|c:\\users\\hp\\documents\\github\\exam_project\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|c:\\users\\hp\\documents\\github\\exam_project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|c:\\users\\hp\\documents\\github\\exam_project\\api\\profileapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:api\\profileapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|c:\\users\\hp\\documents\\github\\exam_project\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|c:\\users\\hp\\documents\\github\\exam_project\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LineOrder.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Models\\LineOrder.cs",
-              "RelativeDocumentMoniker": "Models\\LineOrder.cs",
-              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Models\\LineOrder.cs",
-              "RelativeToolTip": "Models\\LineOrder.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAANAAAA",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-20T23:25:20.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Views\\Admin\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Views\\Admin\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-20T23:25:18.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProfileApiController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Api\\ProfileApiController.cs",
+              "RelativeDocumentMoniker": "Api\\ProfileApiController.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Api\\ProfileApiController.cs",
+              "RelativeToolTip": "Api\\ProfileApiController.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAFYAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T23:57:29.36Z",
+              "WhenOpened": "2024-03-20T23:20:12.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADMAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T22:48:32.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAAADQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-20T22:36:48.119Z",
               "EditorCaption": ""
             }
           ]

@@ -1,0 +1,63 @@
+﻿@using Microsoft.AspNet.Identity
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - интернет магазин</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark sticky-md-top">
+        <div class="container-fluid">
+            @Html.ActionLink("Интернет магазин", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Переключить навигацию" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li>@Html.ActionLink("Главная страница", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Информация", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Контакты", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    @if (Request.IsAuthenticated && User.IsInRole("Administrators"))
+                    {
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="nav-link dropbtn">Панель администратора</a>
+                            <div class="dropdown-content">
+                                @Html.ActionLink("Пользователи", "Index", "Admin")
+                                @Html.ActionLink("Роли", "Index", "RoleAdmin")
+                            </div>
+                        </li>
+                    }
+                </ul>
+                @if (Request.IsAuthenticated)
+                {
+                    <ul class="navbar-nav navbar-right">
+                        <li>
+                            @Html.ActionLink("Здравствуйте " + User.Identity.GetUserName() + "!", "Index", "Home", routeValues: null, htmlAttributes: new { title = "Manage", @class = "nav-link" })
+                        </li>
+                        <li>@Html.ActionLink("Выйти", "Logout", "Account", new { area = "" }, new { @class = "nav-link" })</li>
+                    </ul>
+                }
+            </div>
+        </div>
+    </nav>
+    <main class="mb-auto container-fluid">
+        @RenderBody()
+    </main>
+
+    <footer class="flex-shrink-0 py-4 bg-dark text-white-50 sticky-md-bottom">
+        <div class="container text-center">
+            <small>&copy; @DateTime.Now.Year - Интернет магазин. Все права защищены</small>
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jqueryval")
+    <!--если браузер не создает специального поля для date, то добавляем datepicker-->
+    @RenderSection("scripts", required: false)
+</body>
+</html>
