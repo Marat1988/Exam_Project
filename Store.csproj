@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="packages\Microsoft.TypeScript.MSBuild.5.4.2\build\Microsoft.TypeScript.MSBuild.props" Condition="Exists('packages\Microsoft.TypeScript.MSBuild.5.4.2\build\Microsoft.TypeScript.MSBuild.props')" />
+  <Import Project="packages\Microsoft.TypeScript.MSBuild.5.4.3\build\Microsoft.TypeScript.MSBuild.props" Condition="Exists('packages\Microsoft.TypeScript.MSBuild.5.4.3\build\Microsoft.TypeScript.MSBuild.props')" />
   <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -236,6 +236,10 @@
     <Compile Include="Migrations\202403202021447_AdFilePhooto.Designer.cs">
       <DependentUpon>202403202021447_AdFilePhooto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202403212129233_CreatePersonalDiscount.cs" />
+    <Compile Include="Migrations\202403212129233_CreatePersonalDiscount.Designer.cs">
+      <DependentUpon>202403212129233_CreatePersonalDiscount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppRole.cs" />
     <Compile Include="Models\AppUser.cs" />
@@ -311,6 +315,9 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\3.jpg" />
     <Content Include="Images\No_photo.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -420,6 +427,9 @@
     <EmbeddedResource Include="Migrations\202403202021447_AdFilePhooto.resx">
       <DependentUpon>202403202021447_AdFilePhooto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403212129233_CreatePersonalDiscount.resx">
+      <DependentUpon>202403212129233_CreatePersonalDiscount.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -457,11 +467,11 @@
     <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
     <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
     <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
-    <Error Condition="!Exists('packages\Microsoft.TypeScript.MSBuild.5.4.2\build\Microsoft.TypeScript.MSBuild.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.TypeScript.MSBuild.5.4.2\build\Microsoft.TypeScript.MSBuild.props'))" />
-    <Error Condition="!Exists('packages\Microsoft.TypeScript.MSBuild.5.4.2\build\Microsoft.TypeScript.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.TypeScript.MSBuild.5.4.2\build\Microsoft.TypeScript.MSBuild.targets'))" />
+    <Error Condition="!Exists('packages\Microsoft.TypeScript.MSBuild.5.4.3\build\Microsoft.TypeScript.MSBuild.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.TypeScript.MSBuild.5.4.3\build\Microsoft.TypeScript.MSBuild.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.TypeScript.MSBuild.5.4.3\build\Microsoft.TypeScript.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.TypeScript.MSBuild.5.4.3\build\Microsoft.TypeScript.MSBuild.targets'))" />
   </Target>
   <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
-  <Import Project="packages\Microsoft.TypeScript.MSBuild.5.4.2\build\Microsoft.TypeScript.MSBuild.targets" Condition="Exists('packages\Microsoft.TypeScript.MSBuild.5.4.2\build\Microsoft.TypeScript.MSBuild.targets')" />
+  <Import Project="packages\Microsoft.TypeScript.MSBuild.5.4.3\build\Microsoft.TypeScript.MSBuild.targets" Condition="Exists('packages\Microsoft.TypeScript.MSBuild.5.4.3\build\Microsoft.TypeScript.MSBuild.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

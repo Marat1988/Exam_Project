@@ -27,6 +27,10 @@ namespace Store.Models
         [DisplayName("Аватар")]
         public byte[] Photo {  get; set; }
 
+        [Range(0, 50,ErrorMessage = "Персональная скидка должна быть от 0 до 50")]
+        [DisplayName("Персональная скидка")]
+        public int? PersonalDiscount { get; set; }
+
         public virtual ICollection<Order> Orders { get; set; }
         public virtual ICollection<Recycler> Recyclers { get; set; }
         // Здесь будут указываться дополнительные свойства

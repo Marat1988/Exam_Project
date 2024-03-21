@@ -58,5 +58,22 @@ textarea {
 
 #avatar{
     width: 150px;
-    height: 150px;
+    height: 147px;
+}
+
+img{
+    object-fit: cover;
+}
+
+.carousel {
+    margin: 0 auto; /* Центрирует карусель по горизонтали */
+    max-width: 600px; /* Задает максимальную ширину карусели */
+}
+
+.carousel-item img {
+    max-height: 600px; /* Задает максимальную высоту изображения в карусели */
+}
+
+body {
+    background: conic-gradient(from 60deg at 40% 60%, transparent 0%, rgba(99,207,239,0.46) 30%, rgba(134,214,236,0.25) 100%) 50% 20%/120% 130%, linear-gradient(20deg, rgb(142,172,245) 0%, rgb(103,221,230) 30%, rgb(33,135,203) 70%, rgb(85,237,223) 100%);
 }

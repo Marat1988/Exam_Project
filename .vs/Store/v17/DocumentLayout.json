@@ -7,20 +7,24 @@
       "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|c:\\users\\hp\\documents\\github\\exam_project\\viewmodel\\profileuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:viewmodel\\profileuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\api\\profileapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:api\\profileapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|c:\\users\\hp\\documents\\github\\exam_project\\migrations\\202403212129233_createpersonaldiscount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:migrations\\202403212129233_createpersonaldiscount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|c:\\users\\hp\\documents\\github\\exam_project\\infrastructure\\appidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:infrastructure\\appidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BA41CEC-CB21-4D3D-93D4-C07BA65B1EF9}|Store.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,56 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAADIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T23:25:20.711Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Views\\Admin\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Views\\Admin\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T23:25:18.542Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProfileApiController.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Api\\ProfileApiController.cs",
-              "RelativeDocumentMoniker": "Api\\ProfileApiController.cs",
-              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Api\\ProfileApiController.cs",
-              "RelativeToolTip": "Api\\ProfileApiController.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAFYAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T23:20:12.752Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAADMAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T22:48:32.277Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -88,9 +44,74 @@
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAABkAAAAAAAAAAAAAACsAAAAKAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEgAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T22:36:48.119Z",
+              "WhenOpened": "2024-03-21T21:33:35.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProfileUserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\ViewModel\\ProfileUserViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ProfileUserViewModel.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\ViewModel\\ProfileUserViewModel.cs",
+              "RelativeToolTip": "ViewModel\\ProfileUserViewModel.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T21:33:12.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "202403212129233_CreatePersonalDiscount.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Migrations\\202403212129233_CreatePersonalDiscount.cs",
+              "RelativeDocumentMoniker": "Migrations\\202403212129233_CreatePersonalDiscount.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Migrations\\202403212129233_CreatePersonalDiscount.cs",
+              "RelativeToolTip": "Migrations\\202403212129233_CreatePersonalDiscount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T21:29:28.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppIdentityDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Infrastructure\\AppIdentityDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\AppIdentityDbContext.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Infrastructure\\AppIdentityDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\AppIdentityDbContext.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAnwDsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T21:26:40.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RegisterController.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "Controllers\\RegisterController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T21:26:24.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Exam_Project\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T21:26:09.752Z",
               "EditorCaption": ""
             }
           ]

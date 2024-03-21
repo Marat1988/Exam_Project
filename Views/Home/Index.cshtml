@@ -50,7 +50,7 @@
         <div class="form-group">
             @if (Model.Photo != null)
             {
-                @Html.Raw("<img id='avatar' src=\"data:image/jpeg;base64," + Convert.ToBase64String(Model?.Photo) + "\" onerror='this.src='.. /Images/No_Photo.jpg'' />")
+                @Html.Raw("<img id='avatar' src=\"data:image/jpeg;base64," + Convert.ToBase64String(Model?.Photo) + "\" onerror='this.src='../Images/No_Photo.jpg'' />")
             }
             else
             {
@@ -65,10 +65,10 @@
                 </div>
             </fieldset>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary">Сохранить</button>
+                <button type="submit" class="btn btn-primary">Сохранить фото</button>
+                <button type="submit"class="btn btn-primary" onclick="clearImage()" style="float: right; margin-left: 10px;">Удалить фото</button>
             </div>
         }
-        <button class="btn btn-primary" onclick="clearImage()">Удалить</button>
     </div>
 </div>
 
@@ -102,6 +102,7 @@
             method: "POST",
             success: function (data) {
                 alert(data);
+                $("#avatar").attr("src", "../Images/No_Photo.jpg");
             },
             error: function (data) {
                 alert(data);
